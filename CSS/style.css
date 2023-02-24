@@ -1,0 +1,276 @@
+:root{
+    --red_2:#F2894D;
+    --red_1:#ff3936;
+    --red_3:#660000 ;
+    --brown_1:#743414;
+    --brown_2:#b47150;
+    --grey_1:#565656;
+    --grey_2:#989898;
+    --black: #0a0909e3;
+}
+html{
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+body{
+    overflow-x:hidden ;
+    margin: 0;
+    /* background-color: var(--pink); */
+   font-family: 'Baloo 2', cursive;
+   background-image: url(../IMG/madera_osc.jpg);
+   background-position: center center;
+   background-attachment: fixed;
+   background-size: cover;
+   background-repeat: no-repeat;
+   
+}
+
+section {
+    height: 100vh;
+}
+
+.header {
+ 
+    background-color: var(--red_3);
+    height: 15vh;
+    border-radius: 0;
+    color: white;
+    align-content: center;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    margin: 0% auto;
+    z-index: 100;
+    padding-left: 5%;
+    padding-left: 5%;
+    align-items: center;
+    /* flex-direction: column; */
+    
+}
+
+.header label{
+    font-family: 'Mynerve', cursive;
+    font-size: 5vw;
+    width: 30%;
+}
+
+.header ul {
+    display:flex;
+    justify-content: space-evenly;
+    width: 60%;
+    align-items: center;
+    
+}
+
+.header li {
+    list-style: none;
+    color: white;    
+    
+}
+.header a{
+    text-decoration: none;
+    color: white;
+}
+.carrousel{
+    width: 100%;
+    max-width: 120em;
+    /* background-color: aqua; */
+    /* box-shadow: 5px 5px 15px gray; */
+    padding-top: 0vh;
+    display: block;
+    
+}
+
+.carrousel .bigContainerMoveIt{
+    width: 300%;
+    background-color: var(--brown_2) 0.6;
+    
+    
+    
+    display:flex;
+    
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items:center;
+    padding: 1em;
+    padding-left: 1%;
+    padding-right: 2%;
+    transition: all .5s ease;
+    /* transform: translateX(0%); */
+}
+
+/* .carrousel .img{
+    display: none;
+    } */
+.carrousel  .img{
+    width: calc(100% / 3 - 1em );
+    background-color: white;
+    min-height: 10vh;
+    height: 65vh;
+    box-shadow: 15px 15px 15px 15px var(--black);
+    /* box-shadow: 5px 5px 15px var(--grey_1); */
+    /* display: block; */
+}
+
+
+
+.carrousel .puntos{
+
+    width: 100%;
+    /* background-color: red; */
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.carrousel .punto{
+    width: 1em;
+    height: 1em;
+    margin: 1em;
+    background-color: var(--red_2);
+    box-shadow: 15px 15px 15px var(--black);
+    border-radius: 50%;
+}
+
+.carrousel .punto.activo{
+    background-color: var(--red_3);
+}
+
+#section_2 {
+    height: 75vh;
+    padding-bottom: 10vh;
+    padding-top: 15vh;
+}
+#section_3{
+    
+   height: 70vh;
+   padding-bottom: 15vh;
+   padding-top: 17vh;
+}
+.formMail{
+    background-color: var(--red_3) ;
+    box-shadow: 15px 15px 15px var(--black);
+    width: 50%;
+    height: 60vh;
+    margin: 0% auto;
+    padding: 2%;
+    display:flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 3%;
+    
+}
+
+.formMail input{
+    border-radius: 1%;
+    border-color: transparent;
+    border-bottom: solid;
+    color: white;
+    background-color: var(--red_3);
+
+
+}
+.formMail input:focus{
+    outline: none;
+}
+.formMail label {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: white;
+}
+ #comments{
+    margin-top: 1%;
+    border-radius: 1%;
+    padding: 1%;
+}
+.formMail .sendButton{
+    margin-top: 1%;
+    max-width: 40%;
+    align-self: center;
+}
+
+.formMail .sendButton:hover{
+    background-color: var(--red_1);
+    color: white;
+}
+
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  .whatsapp-icon {
+    margin-top:25%;
+  }
+
+ 
+.footSite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--red_3);
+    color: white;
+    /* border: solid black; */
+       
+    height: 15vh;
+    width: 100%;
+    position: absolute;
+  bottom: 0;
+}
+#logos{
+    
+    margin-top: 2%;
+    align-content: center;
+    padding-left: 2%;
+    padding-right: 3%;
+    height: 30%;
+}
+#logo-one {
+    height: 100%;
+    filter:invert(1);
+}
+#logo-two {
+    height: 100%;
+    filter:invert(1);
+}
+#logo-three {
+    filter:invert(1);
+     height: 90% ;
+     
+}
+#marca{
+    position:relative;
+    bottom: 0;
+}
+
+#logo-one:hover{
+    animation: hithere 1s ease infinite;
+}
+
+#logo-two:hover{
+    animation: hithere 1s ease infinite;
+}
+#logo-three:hover{
+    animation: hithere 1s ease infinite;
+}
+
+  @keyframes hithere {
+    30% { transform: scale(2); }
+    40%, 60% { transform: rotate(-20deg) scale(1.2); }
+    50% { transform: rotate(20deg) scale(1.2); }
+    70% { transform: rotate(0deg) scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
