@@ -150,20 +150,46 @@ section {
    height: 70vh;
    padding-bottom: 15vh;
    padding-top: 17vh;
+   display: flex;
 }
-.formMail{
-    background-color: var(--red_3) ;
-    box-shadow: 15px 15px 15px var(--black);
-    width: 50%;
-    height: 60vh;
+
+.containerForm{
+    display: flex;
+    flex-direction: row;
     margin: 0% auto;
+    height: 60vh;
+    box-shadow: 15px 15px 15px var(--black);
+    border-radius: 3%;
+}
+
+.containerForm .solapaRedes{
+    background-color: var(--red_3);
+    width: 20vw;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    color: white;
+    text-align: center;
+    
+}
+
+.solapaRedes a {
+    display: flex;
+    justify-content: center;
+}
+
+.formMail{
+
+    background-color: var(--red_3) ;
+    width: 40vw;
     padding: 2%;
     display:flex;
     flex-direction: column;
-    color: white;
-    border-radius: 3%;
-    
+    justify-content:space-evenly;
+    color: white; 
 }
+
 
 .formMail input{
     border-radius: 1%;
@@ -225,7 +251,7 @@ section {
     /* border: solid black; */
        
     height: 15vh;
-    width: 100%;
+    width: 100vh;
     position: absolute;
   bottom: 0;
 }
