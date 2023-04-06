@@ -80,13 +80,11 @@ section {
 .header li:hover {
     /* background-color: rgba(182, 169, 169, 0.404); */
     /* background-color: var(--red_1); */
-    text-decoration-line:overline;
+    text-decoration-line: overline;
     border-radius: 10px;
     color: var(--red_1);
-    font-size: 170%;
-    transition: opacity 0.3s ease 1s, transform 0.8s ease 0s;
-    transform: translateY(-5px); 
 
+    animation: pulse 1s ease;
 }
 
 
@@ -264,10 +262,10 @@ section {
     margin-top:25%;
   }
 
-.whatsapp {
+ .whatsapp {
     animation: pulse 1s ease infinite;
 
-}
+} 
   
 .footSite{
     display: flex;
