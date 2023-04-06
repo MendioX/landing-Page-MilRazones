@@ -245,6 +245,7 @@ section {
     color: white;
 }
 
+/* ---whatsapp css----- */
 .whatsapp {
     position:fixed;
     width:60px;
@@ -262,11 +263,8 @@ section {
     margin-top:25%;
   }
 
- .whatsapp {
-    animation: pulse 1s ease infinite;
 
-} 
-  
+ /* --------- footer css -------  */
 .footSite{
     display: flex;
     flex-direction: column;
@@ -307,14 +305,14 @@ section {
 }
 
 #logo-one:hover{
-    animation: hithere 1s ease infinite;
+    animation: pulse 1s ease infinite;
 }
 
 #logo-two:hover{
-    animation: hithere 1s ease infinite;
+    animation: pulse 1s ease infinite;
 }
 #logo-three:hover{
-    animation: hithere 1s ease infinite;
+    animation: pulse 1s ease infinite;
 }
 
   @keyframes hithere {
