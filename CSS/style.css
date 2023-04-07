@@ -23,7 +23,7 @@ body{
    background-attachment: fixed;
    background-size: cover;
    background-repeat: no-repeat;
-   backdrop-filter: blur(3px);
+   /* backdrop-filter: blur(3px);  ROMPE EL BOTON DE WSP*/
 }
 
 section {
@@ -45,6 +45,7 @@ section {
     padding-left: 5%;
     padding-left: 5%;
     align-items: center;
+    
     /* flex-direction: column; */
     
 }
@@ -83,11 +84,28 @@ section {
     text-decoration-line: overline;
     border-radius: 10px;
     color: var(--red_1);
-
+    text-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
     animation: pulse 1s ease;
 }
 
+.logo{
+    display: flex;
+    margin: 0% auto;
+    
+    
+}
+#section_1 label{
 
+    font-size: 5vw;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: 0% auto;
+    text-shadow:  black 10px ;
+    text-decoration: overline;
+    text-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
+}
 
 .carrousel{
     width: 100%;
@@ -155,6 +173,10 @@ section {
 }
 
 .carrousel .punto.activo{
+    background-color: var(--red_3);
+}
+#section_1{
+    padding-top: 15vh;
     background-color: var(--red_3);
 }
 
@@ -243,6 +265,7 @@ section {
 .formMail .sendButton:hover{
     background-color: var(--red_1);
     color: white;
+    box-shadow: 0 0 10px var(--red_1), 0 0 40px var(--red_1), 0 0 80px var(--red_1);
 }
 
 /* ---whatsapp css----- */
