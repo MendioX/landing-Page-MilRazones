@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title> Mil Razones - Herreria</title>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="../CSS/style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -16,6 +17,7 @@
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="icon" href="../IMG/iconEmpresa.png">
+
 </head>
 
 <body>
@@ -31,12 +33,20 @@
 </ul>
 </header>
     <!-- cabecera -->
-    <section id="section_1">
+    <section id="section_1" >
 
-
-        <img src="../IMG/iconEmpresa.png" class="logo">
-
+        <div data-aos="fade-right"
+        data-aos-offset="500" 
+        data-aos-duration="2000"
+        data-aos-once="false"
+        
+        >
+        <img src="../IMG/iconEmpresa.png" class="logo" >
+     </div>
+     <div data-aos="fade-up">
         <label id="slogan">Vos lo soñas y nosotros lo construimos</label>
+     </div>
+        
             
         <a href="https://wa.me/+5491158800848?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp" target="_blank">
             <i class="fa fa-whatsapp whatsapp-icon"></i>
@@ -45,13 +55,19 @@
     </section>
     <!-- logo empresa con slogan  -->
     <section id="section_2">
-<div class="carrousel">
+<div class="carrousel" data-aos="fade-up" data-aos-once="false" data-aos-duration="2000">
 
     <div class="bigContainerMoveIt">
-        <img src="../IMG/fondo_brown.jpg" alt="img 1" class="img">
-        <img src="#" alt="img 2" class="img">
-        <img src="#" alt="img 3" class="img">
-        <!-- <img src="#" alt="img 4" class="img"> -->
+        <div class="tarejtaCarrousel">
+        <img src="https://scontent.faep26-1.fna.fbcdn.net/v/t39.30808-6/333625875_595894978796777_3847438031673442152_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFPIrxksPrWqiI7YXOuTy1vWbA8Swid-ypZsDxLCJ37KogLNx1Pnz3OUpcTF_QHtQls5ohuYP2McmAZjHw6MuPd&_nc_ohc=h80DhKmyIWsAX8q-woK&_nc_ht=scontent.faep26-1.fna&oh=00_AfB2aUB8URAoxAgN47N71QFYpM7FC2sZ4Z7Oo_bhBAzL_g&oe=6434E606" alt="img 1" class="img">
+        </div>
+        <div class="tarejtaCarrousel">
+        <img src="https://scontent.faep26-1.fna.fbcdn.net/v/t39.30808-6/329783716_1547751379062879_8576211495931587823_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGmDKZZyN_ViXDOAzA22p4db6oyrUyIVtlvqjKtTIhW2WEqj6UXj5as-KBTXFVwtcgagxYr5ZGoDFYPUSw7wQ_j&_nc_ohc=zfvXO5ii6tsAX_wX--e&_nc_ht=scontent.faep26-1.fna&oh=00_AfDEkro71qAiJpftrz7Y29gP-S_vomc_kJ75M0IzO0YcfA&oe=64363BE7" alt="img 2" class="img">
+        </div >
+        <div class="tarejtaCarrousel">
+        <img src="https://scontent.faep26-1.fna.fbcdn.net/v/t39.30808-6/265624716_430835828480705_8829565703224402931_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeH6r5s3LmJroOEF-sJsSrx36hCkEmbYKMPqEKQSZtgow0u7bN0nFIOL31q0MLiP2ddgAmMjrV0aXN1fttvR0uzs&_nc_ohc=RG9Tf4Vf_pUAX-QhVkm&_nc_ht=scontent.faep26-1.fna&oh=00_AfA2XLRsOUa2tMgf4gXk7G0AyGJX40B-2kW9VrBpkEhwYA&oe=6436238F" alt="img 3" class="img">
+    </div>
+            <!-- <img src="#" alt="img 4" class="img"> -->
     </div>
     <ul class="puntos">
         <li class="punto activo"></li>
@@ -65,10 +81,11 @@
 
 <section id="section_3">
 
-    <div class="containerForm">
-       <div class="solapaRedes">
-          <h3>Contactanos</h3>  
-        <a href="https://www.linkedin.com/in/nahuel-mendiolar-a21b36164/" target="_blank"><img src="../IMG/facebook.png" id="logo-one"></a>
+    <div class="containerForm" data-aos="fade-right" data-aos-once="false" data-aos-duration="2000">
+       <div class="solapaRedes" data-aos="fade-left" data-aos-once="false" data-aos-duration="2000">
+          <p>Contactanos</p>  
+
+        <a href="https://www.facebook.com/mil.razones.370" target="_blank"><img src="../IMG/facebook.png" id="logo-one"></a>
         <a href="https://github.com/MendioX" target="_blank"><img src="../IMG/instagram.png" id="logo-two"></a>
         <a href="mailto:mendiolarcolombonahuelmt6@gmail.com" target="_blank"><img src="../IMG/gmail.png" id="logo-three"></a>
         
@@ -117,6 +134,9 @@
 
 <!-- otros medios de contacto marcas desarrolladores -->
 
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
