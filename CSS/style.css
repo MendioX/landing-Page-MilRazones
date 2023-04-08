@@ -91,7 +91,7 @@ section {
 .logo{
     display: flex;
     margin: 0% auto;
-    
+    max-width: 85%;
     
 }
 #section_1 label{
@@ -194,6 +194,7 @@ section {
     height: 75vh;
     padding-bottom: 10vh;
     padding-top: 15vh;
+    overflow: hidden;
 }
 #section_3{
     
@@ -218,12 +219,17 @@ section {
     padding: 2%;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
     color: white;
     text-align: center;
     border-radius:  10px 0 0 10px; 
     font-size: 1.5rem;
     
+}
+.containerForm .cajaIconos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
 }
 
 .solapaRedes a {
@@ -290,7 +296,7 @@ section {
     position:fixed;
     width:60px;
     height:60px;
-    bottom:40px;
+    bottom:90px;
     right:40px;
     background-color:#25d366;
     color:#FFF;
@@ -372,10 +378,47 @@ section {
     
   }
 
-  @media only screen and (max-width : 600px) {
+  @media only screen and (max-width : 360px) {
      .header label{
         display: none;
      }
 
+     
+     .header{
+        padding-left: 0%;
+     }
+
+    .header ul {
+        width: 100%;
+        padding-left: 0%;
+    }
+    .containerForm{
+        flex-direction: column;
+        width: 70vw;
+        
+    }
+
+    .containerForm .solapaRedes{
+        flex-direction: column;
+        width: 70vw;
+        height: 8vh;
+        border-radius: 0%;
+    }
     
+    .solapaRedes p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .containerForm .cajaIconos{
+        flex-direction: row;
+        width: 100%;
+        height: 150%;
+        justify-content: space-evenly;
+    }
+    .formMail{
+        width: 70vw;
+        height: 100%;
+        border-radius: 0%;
+    }
     }
